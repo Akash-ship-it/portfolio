@@ -1,9 +1,16 @@
+'use client';
+
+import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination';
 import Link from 'next/link';
 import { Container } from '@/components/container';
 
 const Projects = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6;
+
   const projects = [
     {
       title: 'LinkedIn Clone',
@@ -47,7 +54,44 @@ const Projects = () => {
       demoLink: '#',
       codeLink: '#',
     },
+    // Add more projects to test pagination
+    {
+      title: 'Task Management App',
+      description: 'A comprehensive task management application with real-time collaboration features.',
+      technologies: ['React.js', 'Node.js', 'Socket.io', 'MongoDB', 'JWT'],
+      demoLink: '#',
+      codeLink: '#',
+    },
+    {
+      title: 'Weather Dashboard',
+      description: 'Real-time weather dashboard with location-based forecasts and interactive maps.',
+      technologies: ['React.js', 'OpenWeather API', 'Leaflet Maps', 'TypeScript'],
+      demoLink: '#',
+      codeLink: '#',
+    },
+    {
+      title: 'Social Media Analytics',
+      description: 'Analytics platform for tracking social media performance and engagement metrics.',
+      technologies: ['Next.js', 'Chart.js', 'Twitter API', 'PostgreSQL'],
+      demoLink: '#',
+      codeLink: '#',
+    },
   ];
+
+  // Calculate pagination
+  const totalPages = Math.ceil(projects.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentProjects = projects.slice(startIndex, endIndex);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    // Scroll to top of projects section
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className="py-12 md:py-16" id="projects">
@@ -62,7 +106,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 mt-8">
-          {projects.map((project, index) => (
+          {currentProjects.map((project, index) => (
             <Card key={index} className="overflow-hidden flex flex-col h-full shadow-lg dark:shadow-black/30 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
               <CardHeader className="pb-2">
                 <CardTitle>{project.title}</CardTitle>
@@ -93,6 +137,73 @@ const Projects = () => {
             </Card>
           ))}
         </div>
+        
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex justify-center mt-12">
+            <Pagination>
+              <PaginationContent>
+                <PaginationItem>
+                  <PaginationPrevious 
+                    onClick={() => handlePageChange(currentPage - 1)}
+                    className={currentPage === 1 ? 'pointer-events-none opacity-50' : 'cursor-pointer'}
+                  />
+                </PaginationItem>
+                
+                {/* First page */}
+                {currentPage > 2 && (
+                  <PaginationItem>
+                    <PaginationLink onClick={() => handlePageChange(1)}>1</PaginationLink>
+                  </PaginationItem>
+                )}
+                
+                {/* Ellipsis */}
+                {currentPage > 3 && (
+                  <PaginationItem>
+                    <PaginationEllipsis />
+                  </PaginationItem>
+                )}
+                
+                {/* Current page and neighbors */}
+                {Array.from({ length: Math.min(3, totalPages) }, (_, i) => {
+                  const page = currentPage - 1 + i;
+                  if (page < 1 || page > totalPages) return null;
+                  return (
+                    <PaginationItem key={page}>
+                      <PaginationLink 
+                        onClick={() => handlePageChange(page)}
+                        isActive={page === currentPage}
+                      >
+                        {page}
+                      </PaginationLink>
+                    </PaginationItem>
+                  );
+                })}
+                
+                {/* Ellipsis */}
+                {currentPage < totalPages - 2 && (
+                  <PaginationItem>
+                    <PaginationEllipsis />
+                  </PaginationItem>
+                )}
+                
+                {/* Last page */}
+                {currentPage < totalPages - 1 && (
+                  <PaginationItem>
+                    <PaginationLink onClick={() => handlePageChange(totalPages)}>{totalPages}</PaginationLink>
+                  </PaginationItem>
+                )}
+                
+                <PaginationItem>
+                  <PaginationNext 
+                    onClick={() => handlePageChange(currentPage + 1)}
+                    className={currentPage === totalPages ? 'pointer-events-none opacity-50' : 'cursor-pointer'}
+                  />
+                </PaginationItem>
+              </PaginationContent>
+            </Pagination>
+          </div>
+        )}
       </Container>
     </section>
   );
