@@ -11,6 +11,7 @@ const sectionVariant = {
 export function SectionReveal({ children }: { children: ReactNode }) {
   return (
     <motion.div
+    // @ts-ignore
       variants={sectionVariant}
       initial="hidden"
       whileInView="visible"
