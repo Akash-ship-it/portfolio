@@ -3,8 +3,8 @@ import { Container } from '@/components/container';
 
 const About = () => {
   return (
-    <section className="py-12 md:py-16 bg-muted/50" id="about">
-      <div className="border-t border-muted mb-12" />
+    <section className="py-12 md:py-16 bg-gradient-to-br from-background via-background to-muted/10 relative overflow-hidden" id="about">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-primary/10 via-background/80 to-background/90 -z-10" />
       <Container>
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
