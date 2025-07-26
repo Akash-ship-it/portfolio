@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { Container } from '@/components/container';
@@ -64,26 +64,40 @@ const Header = () => {
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-            <nav className="flex flex-col gap-4 mt-8">
-              {navItems.map((item) => (
-                <Link 
-                  key={item.name} 
-                  href={item.href}
-                  className="text-lg font-medium transition-all duration-200 hover:text-primary hover:underline underline-offset-4"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-              <div className="flex items-center mt-4">
-                <ThemeToggle />
-                <span className="ml-2 text-sm">Toggle theme</span>
+          <SheetContent side="right" className="w-[280px] sm:w-[320px] p-6">
+            <SheetHeader className="mb-8">
+              <SheetTitle>Navigation Menu</SheetTitle>
+              <SheetDescription>
+                Access all sections of the portfolio
+              </SheetDescription>
+            </SheetHeader>
+            
+            <div className="flex flex-col h-full">
+              {/* Navigation Links */}
+              <nav className="flex flex-col space-y-4 flex-1">
+                {navItems.map((item) => (
+                  <Link 
+                    key={item.name} 
+                    href={item.href}
+                    className="flex items-center px-4 py-3 text-base font-medium text-foreground transition-all duration-200 hover:text-primary hover:bg-muted/50 rounded-lg"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </nav>
+              
+              {/* Bottom Section */}
+              <div className="border-t pt-6 space-y-4">
+                <div className="flex items-center justify-between px-4 py-3 bg-muted/50 rounded-lg">
+                  <span className="text-sm font-medium">Theme</span>
+                  <ThemeToggle />
+                </div>
+                <Button asChild className="w-full bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-md hover:from-accent hover:to-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                  <Link href="#contact" onClick={() => setIsOpen(false)}>Hire Me</Link>
+                </Button>
               </div>
-              <Button asChild className="mt-4 bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-md hover:from-accent hover:to-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                <Link href="#contact" onClick={() => setIsOpen(false)}>Hire Me</Link>
-              </Button>
-            </nav>
+            </div>
           </SheetContent>
         </Sheet>
       </Container>
