@@ -38,14 +38,17 @@ const Contact = () => {
           </div>
         </div>
         <div className="mx-auto max-w-lg mt-8">
-          <Card className="shadow-lg dark:shadow-black/30">
-            <CardHeader>
-              <CardTitle>Contact Me</CardTitle>
+          <Card className="shadow-lg dark:shadow-black/30 relative overflow-hidden">
+            {/* Gradient border effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-lg p-[1px] -z-10" />
+            <div className="absolute inset-[1px] bg-background rounded-lg" />
+            <CardHeader className="relative z-10">
+              <CardTitle className="text-primary">Contact Me</CardTitle>
               <CardDescription>
                 Fill out the form below and I'll get back to you as soon as possible.
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="relative z-10">
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
@@ -91,7 +94,7 @@ const Contact = () => {
                 <Button type="submit" className="w-full bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-md hover:from-accent hover:to-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">Send Message</Button>
               </form>
             </CardContent>
-            <CardFooter className="flex justify-between">
+            <CardFooter className="flex justify-between relative z-10">
               <div className="text-sm text-muted-foreground">
                 You can also reach me at <a href="mailto:akashmore83386@gmail.com" className="font-medium underline underline-offset-4">akashmore83386@gmail.com</a>
               </div>

@@ -6,7 +6,12 @@ import { Container } from '@/components/container';
 
 const Hero = () => {
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28 relative overflow-hidden">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/20 -z-10" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl -z-10" />
+      
       <Container>
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_450px]">
           <div className="flex flex-col justify-center space-y-4 animate-in fade-in slide-in-from-bottom duration-700">
@@ -85,15 +90,17 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex items-center justify-center animate-in fade-in slide-in-from-bottom duration-700 delay-200">
-            <div className="relative aspect-square overflow-hidden rounded-full border border-gray-200 dark:border-gray-800">
-              <Image 
-                src="/profile-photo.jpg" 
-                alt="Akash More" 
-                width={800} 
-                height={800} 
-                className="object-cover"
-                
-              />
+            <div className="relative aspect-square overflow-hidden rounded-full border-4 border-gradient-to-r from-primary/20 via-accent/20 to-primary/20 bg-gradient-to-r from-primary/10 to-accent/10 p-1 shadow-2xl">
+              <div className="relative aspect-square overflow-hidden rounded-full border border-gray-200 dark:border-gray-800">
+                <Image 
+                  src="/profile-photo.jpg" 
+                  alt="Akash More" 
+                  width={800} 
+                  height={800} 
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>

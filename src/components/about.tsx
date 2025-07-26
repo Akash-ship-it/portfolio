@@ -15,8 +15,11 @@ const About = () => {
           </div>
         </div>
         <div className="mx-auto max-w-3xl mt-8 animate-in fade-in slide-in-from-bottom duration-700">
-          <Card className="shadow-lg dark:shadow-black/30">
-            <CardContent className="p-6 text-lg">
+          <Card className="shadow-lg dark:shadow-black/30 relative overflow-hidden">
+            {/* Gradient border effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-lg p-[1px] -z-10" />
+            <div className="absolute inset-[1px] bg-background rounded-lg" />
+            <CardContent className="p-6 text-lg relative z-10">
               <p className="mb-4">
                 I'm a Senior Software Developer with extensive experience in modern web technologies. My journey in software development has equipped me with a diverse skill set spanning both frontend and backend technologies.
               </p>

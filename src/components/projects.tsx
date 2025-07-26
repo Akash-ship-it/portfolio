@@ -107,24 +107,27 @@ const Projects = () => {
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 mt-8">
           {currentProjects.map((project, index) => (
-            <Card key={index} className="overflow-hidden flex flex-col h-full shadow-lg dark:shadow-black/30 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-              <CardHeader className="pb-2">
-                <CardTitle>{project.title}</CardTitle>
+            <Card key={index} className="overflow-hidden flex flex-col h-full shadow-lg dark:shadow-black/30 transition-transform duration-300 hover:scale-105 hover:shadow-2xl group relative">
+              {/* Gradient border effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-lg p-[1px] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-[1px] bg-background rounded-lg" />
+              <CardHeader className="pb-2 relative z-10">
+                <CardTitle className="text-primary">{project.title}</CardTitle>
                 <CardDescription>{project.description}</CardDescription>
               </CardHeader>
-              <CardContent className="py-2 flex-grow">
+              <CardContent className="py-2 flex-grow relative z-10">
                 <div className="flex flex-wrap gap-2 mt-2">
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="inline-flex items-center rounded-md bg-primary/10 px-2 py-1 text-xs font-medium text-primary ring-1 ring-inset ring-primary/20"
+                      className="inline-flex items-center rounded-md bg-primary/10 px-2 py-1 text-xs font-medium text-primary ring-1 ring-inset ring-primary/20 transition-all duration-200 hover:bg-primary/20 hover:scale-105"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="pt-2">
+              <CardFooter className="pt-2 relative z-10">
                 <div className="flex gap-2 w-full">
                   <Button asChild variant="outline" size="sm" className="w-full border-2 border-primary text-primary font-semibold hover:bg-primary/10 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                     <Link href={project.demoLink}>Live Demo</Link>
