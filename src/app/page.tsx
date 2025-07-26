@@ -6,18 +6,31 @@ import Skills from '@/components/skills';
 import Projects from '@/components/projects';
 import Contact from '@/components/contact';
 import Footer from '@/components/footer';
+import { SectionReveal } from '@/components/section-reveal';
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-1">
-        <Hero />
-        <About />
-        <Experience />
-        <Skills />
-        <Projects />
-        <Contact />
+        <SectionReveal>
+          <Hero />
+        </SectionReveal>
+        <SectionReveal>
+          <About />
+        </SectionReveal>
+        <SectionReveal>
+          <Experience />
+        </SectionReveal>
+        <SectionReveal>
+          <Skills />
+        </SectionReveal>
+        <SectionReveal>
+          <Projects />
+        </SectionReveal>
+        <SectionReveal>
+          <Contact />
+        </SectionReveal>
       </main>
       <Footer />
     </div>

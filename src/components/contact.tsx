@@ -26,7 +26,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-12 md:py-16" id="contact">
+    <section className="py-12 md:py-16 bg-muted/50" id="contact">
+      <div className="border-t border-muted mb-12" />
       <Container>
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -37,7 +38,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="mx-auto max-w-lg mt-8">
-          <Card>
+          <Card className="shadow-lg dark:shadow-black/30">
             <CardHeader>
               <CardTitle>Contact Me</CardTitle>
               <CardDescription>
@@ -87,7 +88,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                <Button type="submit" className="w-full">Send Message</Button>
+                <Button type="submit" className="w-full bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-md hover:from-accent hover:to-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">Send Message</Button>
               </form>
             </CardContent>
             <CardFooter className="flex justify-between">

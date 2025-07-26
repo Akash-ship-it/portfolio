@@ -18,7 +18,8 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-12 md:py-16" id="skills">
+    <section className="py-12 md:py-16 bg-muted/50" id="skills">
+      <div className="border-t border-muted mb-12" />
       <Container>
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -28,9 +29,9 @@ const Skills = () => {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3 lg:gap-8 mt-8">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3 lg:gap-8 mt-8 animate-in fade-in slide-in-from-bottom duration-700">
           {skillCategories.map((category) => (
-            <Card key={category.category} className="overflow-hidden">
+            <Card key={category.category} className="overflow-hidden shadow-lg dark:shadow-black/30">
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-4">{category.category}</h3>
                 <div className="flex flex-wrap gap-2">

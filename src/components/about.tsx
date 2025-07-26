@@ -3,7 +3,8 @@ import { Container } from '@/components/container';
 
 const About = () => {
   return (
-    <section className="py-12 md:py-16" id="about">
+    <section className="py-12 md:py-16 bg-muted/50" id="about">
+      <div className="border-t border-muted mb-12" />
       <Container>
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -13,8 +14,8 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="mx-auto max-w-3xl mt-8">
-          <Card>
+        <div className="mx-auto max-w-3xl mt-8 animate-in fade-in slide-in-from-bottom duration-700">
+          <Card className="shadow-lg dark:shadow-black/30">
             <CardContent className="p-6 text-lg">
               <p className="mb-4">
                 I'm a Senior Software Developer with extensive experience in modern web technologies. My journey in software development has equipped me with a diverse skill set spanning both frontend and backend technologies.

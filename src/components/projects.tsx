@@ -51,6 +51,7 @@ const Projects = () => {
 
   return (
     <section className="py-12 md:py-16" id="projects">
+      <div className="border-t border-muted mb-12" />
       <Container>
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -62,7 +63,7 @@ const Projects = () => {
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 mt-8">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden flex flex-col h-full">
+            <Card key={index} className="overflow-hidden flex flex-col h-full shadow-lg dark:shadow-black/30 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
               <CardHeader className="pb-2">
                 <CardTitle>{project.title}</CardTitle>
                 <CardDescription>{project.description}</CardDescription>
@@ -81,10 +82,10 @@ const Projects = () => {
               </CardContent>
               <CardFooter className="pt-2">
                 <div className="flex gap-2 w-full">
-                  <Button asChild variant="outline" size="sm" className="w-full">
+                  <Button asChild variant="outline" size="sm" className="w-full border-2 border-primary text-primary font-semibold hover:bg-primary/10 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                     <Link href={project.demoLink}>Live Demo</Link>
                   </Button>
-                  <Button asChild size="sm" className="w-full">
+                  <Button asChild size="sm" className="w-full bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-md hover:from-accent hover:to-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                     <Link href={project.codeLink}>View Code</Link>
                   </Button>
                 </div>

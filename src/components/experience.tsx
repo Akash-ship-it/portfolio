@@ -89,6 +89,7 @@ const Experience = () => {
 
   return (
     <section className="py-12 md:py-16" id="experience">
+      <div className="border-t border-muted mb-12" />
       <Container>
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -98,7 +99,7 @@ const Experience = () => {
             </p>
           </div>
         </div>
-        <div className="mx-auto mt-8 md:mt-12 max-w-4xl">
+        <div className="mx-auto mt-8 md:mt-12 max-w-4xl animate-in fade-in slide-in-from-bottom duration-700">
           <Tabs defaultValue="bizworkz" className="w-full">
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 lg:grid-cols-4 mb-8">
               <TabsTrigger value="bizworkz">bizWorkz</TabsTrigger>
@@ -108,7 +109,7 @@ const Experience = () => {
             </TabsList>
             {experiences.map((exp) => (
               <TabsContent key={exp.id} value={exp.id} className="space-y-4">
-                <Card>
+                <Card className="shadow-lg dark:shadow-black/30">
                   <CardHeader>
                     <CardTitle>{exp.position}</CardTitle>
                     <CardDescription>

@@ -12,17 +12,17 @@ const Header = () => {
 
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Experience', href: '/experience' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'About', href: '#about' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <Container className="flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
-          <Link href="/" className="font-bold text-xl">Akash More</Link>
+          <Link href="/" className="font-bold text-xl transition-transform duration-200 hover:scale-105 hover:text-primary">Akash More</Link>
         </div>
         
         {/* Desktop Navigation */}
@@ -31,14 +31,14 @@ const Header = () => {
             <Link 
               key={item.name} 
               href={item.href}
-              className="text-sm font-medium transition-colors hover:text-primary"
+              className="text-sm font-medium transition-all duration-200 hover:text-primary hover:underline underline-offset-4"
             >
               {item.name}
             </Link>
           ))}
           <ThemeToggle />
-          <Button asChild>
-            <Link href="/contact">Hire Me</Link>
+          <Button asChild className="bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-md hover:from-accent hover:to-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+            <Link href="#contact">Hire Me</Link>
           </Button>
         </nav>
         
@@ -70,7 +70,7 @@ const Header = () => {
                 <Link 
                   key={item.name} 
                   href={item.href}
-                  className="text-lg font-medium transition-colors hover:text-primary"
+                  className="text-lg font-medium transition-all duration-200 hover:text-primary hover:underline underline-offset-4"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
@@ -80,8 +80,8 @@ const Header = () => {
                 <ThemeToggle />
                 <span className="ml-2 text-sm">Toggle theme</span>
               </div>
-              <Button asChild className="mt-4">
-                <Link href="/contact" onClick={() => setIsOpen(false)}>Hire Me</Link>
+              <Button asChild className="mt-4 bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-md hover:from-accent hover:to-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                <Link href="#contact" onClick={() => setIsOpen(false)}>Hire Me</Link>
               </Button>
             </nav>
           </SheetContent>
