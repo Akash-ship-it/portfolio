@@ -21,7 +21,7 @@ const About = () => {
             <div className="absolute inset-[1px] bg-background rounded-lg" />
             <CardContent className="p-6 text-lg relative z-10">
               <p className="mb-4">
-                I'm a Senior Software Developer with extensive experience in modern web technologies. My journey in software development has equipped me with a diverse skill set spanning both frontend and backend technologies.
+                I&apos;m a Senior Software Developer with extensive experience in modern web technologies. My journey in software development has equipped me with a diverse skill set spanning both frontend and backend technologies.
               </p>
               <p className="mb-4">
                 Currently working at bizWorkz Consulting, I specialize in building robust and scalable web applications using Next.js, React, and TypeScript. My experience includes developing complex applications from scratch, implementing RESTful APIs, and integrating third-party services.
@@ -30,10 +30,10 @@ const About = () => {
                 I have a strong foundation in the MERN stack (MongoDB, Express.js, React, Node.js) and have expanded my expertise to include technologies like Golang, microservices architecture with gRPC, and cloud services on AWS.
               </p>
               <p className="mb-4">
-                I'm passionate about creating clean, efficient, and maintainable code. I enjoy solving complex problems and continuously learning new technologies to stay at the forefront of web development.
+                I&apos;m passionate about creating clean, efficient, and maintainable code. I enjoy solving complex problems and continuously learning new technologies to stay at the forefront of web development.
               </p>
               <p>
-                When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing my knowledge with the developer community.
+                When I&apos;m not coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing my knowledge with the developer community.
               </p>
             </CardContent>
           </Card>

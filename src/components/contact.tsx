@@ -3,21 +3,19 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Container } from '@/components/container';
 
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // In a real application, you would send this data to your backend
     console.log({ name, email, message });
-    setIsSubmitted(true);
     setIsDialogOpen(true);
     // Reset form
     setName('');
@@ -45,7 +43,7 @@ const Contact = () => {
             <CardHeader className="relative z-10">
               <CardTitle className="text-primary">Contact Me</CardTitle>
               <CardDescription>
-                Fill out the form below and I'll get back to you as soon as possible.
+                Fill out the form below and I&apos;ll get back to you as soon as possible.
               </CardDescription>
             </CardHeader>
             <CardContent className="relative z-10">
@@ -108,7 +106,7 @@ const Contact = () => {
           <DialogHeader>
             <DialogTitle>Message Sent!</DialogTitle>
             <DialogDescription>
-              Thank you for reaching out. I'll get back to you as soon as possible.
+              Thank you for reaching out. I&apos;ll get back to you as soon as possible.
             </DialogDescription>
           </DialogHeader>
           <DialogFooter>
