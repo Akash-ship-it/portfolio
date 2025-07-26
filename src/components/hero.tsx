@@ -50,6 +50,39 @@ const Hero = () => {
                 </HoverCardContent>
               </HoverCard>
             </div>
+            
+            {/* Resume Section - Redesigned */}
+            <div className="flex items-center gap-3 mt-6">
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <svg
+                  className="h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+                <span>Resume</span>
+              </div>
+              <div className="flex gap-2">
+                <Button asChild size="sm" variant="ghost" className="h-8 px-3 text-xs hover:bg-muted">
+                  <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                    View
+                  </Link>
+                </Button>
+                <Button asChild size="sm" className="h-8 px-3 text-xs bg-gradient-to-r from-primary to-accent text-white font-medium shadow-sm hover:from-accent hover:to-primary">
+                  <Link href="/resume.pdf" download>
+                    Download
+                  </Link>
+                </Button>
+              </div>
+            </div>
           </div>
           <div className="flex items-center justify-center animate-in fade-in slide-in-from-bottom duration-700 delay-200">
             <div className="relative aspect-square overflow-hidden rounded-full border border-gray-200 dark:border-gray-800">
