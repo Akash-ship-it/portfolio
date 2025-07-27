@@ -11,7 +11,9 @@ const Experience = () => {
       period: 'Oct 2023 - Present',
       location: 'Pune (Remote)',
       description: [
-        'Working on modern web applications using Next.js, React, and TypeScript.',
+        'Engineered a real-time internal broadcasting application for the College of Defence Management (CDM), enabling management to instantly push news, videos, and critical announcements to displays across the campus.',
+        'Led the deployment and maintenance for a diverse portfolio of enterprise SaaS products including a CRM, an AI-powered application, and a website optimization tool, ensuring high availability and performance.',
+        'Managed the full lifecycle of a critical internal employee management tool, from initial deployment to ongoing support and feature updates.',
       ],
     },
     {

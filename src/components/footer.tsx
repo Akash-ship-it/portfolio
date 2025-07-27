@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { Container } from '@/components/container';
+import Link from "next/link";
+import { Container } from "@/components/container";
 
 const Footer = () => {
   return (
@@ -11,24 +11,33 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex gap-4">
-          <Link 
-            href="https://www.linkedin.com/in/akashmore8386/" 
-            target="_blank" 
+          <Link
+            href="https://www.linkedin.com/in/akashmore8386/"
+            target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-semibold transition-colors hover:text-primary hover:underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             LinkedIn
           </Link>
-          <Link 
-            href="https://github.com/akashmore8386" 
-            target="_blank" 
+          <Link
+            href="https://www.youtube.com/@akashmore83386"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-semibold transition-colors hover:text-primary hover:underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          >
+            Youtube
+          </Link>
+          <Link
+            href="https://github.com/akashmore83386"
+            target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-semibold transition-colors hover:text-primary hover:underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             GitHub
           </Link>
-          <Link 
-            href="mailto:akashmore83386@gmail.com" 
+
+          <Link
+            href="mailto:akashmore83386@gmail.com"
             className="text-sm font-semibold transition-colors hover:text-primary hover:underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             Email
