@@ -13,7 +13,7 @@ const testimonials = [
     role: 'Project Manager',
     content: 'Enthusiastic person willing to learn new everytime. Ready to take up challenges. Cool & Calm in tug of war situation. Loved working with him.',
     rating: 5,
-    image: '/profile-placeholder.svg'
+    image: '/deepak.jpg'
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const testimonials = [
     role: 'Founder @bizworkz',
     content: 'I have worked with Akash since the very early days at bizWorkz, and even to this day he has been one of the best human and professional I have worked with in the last two decades. Extremely committed, professional, technically savvy, and efficient person.',
     rating: 5,
-    image: '/profile-placeholder.svg'
+    image: '/sumit.jpg'
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const testimonials = [
     role: 'Marketing Specialist',
     content: 'I have had the pleasure of working closely with Akash More, who has been an exceptional Software Developer with a remarkable talent for building innovative and scalable solutions using JavaScript and its ecosystem.',
     rating: 5,
-    image: '/profile-placeholder.svg'
+    image: '/natasha.jpg'
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const testimonials = [
     role: 'Digital Operations Manager',
     content: 'Akash is one of the most crucial and dedicated members of Bizworkz team. As a Full Stack Developer, he has played a key role in driving our growth, consistently delivering high-quality solutions.',
     rating: 5,
-    image: '/profile-placeholder.svg'
+    image: '/swagatika.jpg'
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const testimonials = [
     role: 'Service Delivery Manager',
     content: 'A jack of all master in one...!!! True tech enthusiast with multi domain expertise happy to see the talent at this age Akash.',
     rating: 5,
-    image: '/profile-placeholder.svg'
+    image: '/sagar.jpg'
   },
   {
     id: 6,
@@ -61,7 +61,7 @@ const testimonials = [
     role: 'Sr. Software Engineer',
     content: 'Akash is a quick learner and someone who is open to learning many pieces of technology to create software solutions. He is very enthusiastic and an extremely hard working individual.',
     rating: 5,
-    image: '/profile-placeholder.svg'
+    image: '/srijon.jpg'
   }
 ];
 
