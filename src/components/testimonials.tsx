@@ -111,7 +111,7 @@ export function Testimonials() {
             What People Say
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            Don't just take my word for it. Here's what my colleagues and clients have to say about working with me.
+            Don&apos;t just take my word for it. Here&apos;s what my colleagues and clients have to say about working with me.
           </p>
         </div>
         
@@ -137,7 +137,7 @@ export function Testimonials() {
                     ))}
                   </div>
                   
-                  <p className="text-muted-foreground mb-6 flex-grow">"{testimonial.content}"</p>
+                  <p className="text-muted-foreground mb-6 flex-grow">&ldquo;{testimonial.content}&rdquo;</p>
                   
                   <div className="flex items-center gap-4">
                     <Avatar>
