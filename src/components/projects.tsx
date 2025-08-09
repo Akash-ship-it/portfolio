@@ -29,8 +29,7 @@ const Projects = () => {
   const projects = [
     {
       title: "ChitraKar",
-      description:
-        "Developed, Deployed a text to image generator application",
+      description: "Developed, Deployed a text to image generator application",
       technologies: [
         "Next.js",
         "TypeScript",
@@ -40,7 +39,7 @@ const Projects = () => {
         "Python",
         "Hugging Face",
         "Pytorch",
-        "FastAPI"
+        "FastAPI",
       ],
       demoLink: "https://image-generation-fronend-1-1.vercel.app/",
     },
@@ -102,6 +101,7 @@ const Projects = () => {
         "Tailwind CSS",
         "Shadcn UI",
       ],
+      demoLink: "https://bizworkz.me/",
     },
     {
       title: "bizhubb",
@@ -124,7 +124,7 @@ const Projects = () => {
       description:
         "Delpoyed and maintained a website performance monitoring tool",
       technologies: ["Next.js", "Node.js", "Socket.io", "MongoDB", "JWT"],
-      demoLink: "https://bluetikk.io/",
+      demoLink: "https://agencytoolz.io/",
     },
 
     {
@@ -225,7 +225,11 @@ const Projects = () => {
                     size="sm"
                     className="w-full border-2 border-primary text-primary font-semibold hover:bg-primary/10 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                   >
-                    {project.demoLink ? <Link href={project.demoLink} target="_blank">Live Demo</Link> : null}
+                    {project.demoLink ? (
+                      <Link href={project.demoLink} target="_blank">
+                        Live Demo
+                      </Link>
+                    ) : null}
                   </Button>
                 </div>
               </CardFooter>
