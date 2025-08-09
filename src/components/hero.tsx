@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_450px]">
           <div className="flex flex-col justify-center space-y-4 animate-in fade-in slide-in-from-bottom duration-700">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+              <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
                 Hi, I&apos;m Akash More
               </h1>
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">

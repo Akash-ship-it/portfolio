@@ -33,14 +33,6 @@ const testimonials = [
   },
   {
     id: 4,
-    name: 'Swagatika Mishra',
-    role: 'Digital Operations Manager',
-    content: 'Akash is one of the most crucial and dedicated members of Bizworkz team. As a Full Stack Developer, he has played a key role in driving our growth, consistently delivering high-quality solutions.',
-    rating: 5,
-    image: '/swagatika.jpg'
-  },
-  {
-    id: 5,
     name: 'Sagar Suryawanshi',
     role: 'Service Delivery Manager',
     content: 'A jack of all master in one...!!! True tech enthusiast with multi domain expertise happy to see the talent at this age Akash.',
@@ -48,7 +40,7 @@ const testimonials = [
     image: '/sagar.jpg'
   },
   {
-    id: 6,
+    id: 5,
     name: 'Ganesh Solace',
     role: 'Business Development Executive',
     content: 'I highly recommend Mr. Akash More as an experienced JavaScript, NodeJS developer and would love to work together again. Akash is amazing at his job!',
@@ -56,7 +48,7 @@ const testimonials = [
     image: '/profile-placeholder.svg'
   },
   {
-    id: 7,
+    id: 6,
     name: 'Srijon Kumar Das',
     role: 'Sr. Software Engineer',
     content: 'Akash is a quick learner and someone who is open to learning many pieces of technology to create software solutions. He is very enthusiastic and an extremely hard working individual.',
@@ -108,9 +100,9 @@ export function Testimonials() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            What People Say
+            What People Say 
           </h2>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-4 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
             Don&apos;t just take my word for it. Here&apos;s what my colleagues and clients have to say about working with me.
           </p>
         </div>
