@@ -28,6 +28,23 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Aika",
+      description: "Developed, Deployed an AI-powered music generator",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Python",
+        "Hugging Face",
+        "Pytorch",
+        "FastAPI",
+        "Ace step",
+        "Vercel",
+      ],
+      demoLink: "https://music-generator-m8na5l4vz-akash-mores-projects.vercel.app/",
+    },
+    {
       title: "ChitraKar",
       description: "Developed, Deployed a text to image generator application",
       technologies: [
