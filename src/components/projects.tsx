@@ -28,6 +28,20 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Perfex Website Performance Analyzer",
+      description: "Developed, Deployed Website Performance Analyzer",
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Recharts",
+        "Vercel",
+      ],
+      demoLink: "https://website-performance-five.vercel.app/",
+    },
+    {
       title: "Aika",
       description: "Developed, Deployed an AI-powered music generator",
       technologies: [
