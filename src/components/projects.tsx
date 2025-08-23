@@ -37,6 +37,7 @@ const Projects = () => {
         "Tailwind CSS",
         "Shadcn UI",
         "Recharts",
+        "PageSpeed Insights API",
         "Vercel",
       ],
       demoLink: "https://website-performance-five.vercel.app/",
