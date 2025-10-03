@@ -7,7 +7,7 @@ const Experience = () => {
     {
       id: 'bizworkz',
       company: 'bizWorkz Consulting',
-      position: 'Senior Software Developer',
+      position: 'Consultant Software Developer',
       period: 'Oct 2023 - Present',
       location: 'Pune (Remote)',
       description: [
@@ -19,7 +19,7 @@ const Experience = () => {
     {
       id: 'sanicon',
       company: 'Sanicon IT Services Pvt. Ltd',
-      position: 'Software Developer',
+      position: 'Full Stack Software Developer',
       period: 'Feb 2023 - June 2023',
       location: 'Pune (Remote)',
       description: [
@@ -43,7 +43,7 @@ const Experience = () => {
     {
       id: 'solace',
       company: 'Solace Infotech Private Limited',
-      position: 'Software Developer',
+      position: 'Trainee Software Consultant',
       period: 'Apr 2022 - Sep 2022',
       location: 'Pune (Remote)',
       description: [
@@ -57,7 +57,7 @@ const Experience = () => {
     {
       id: 'sawbon',
       company: 'Sawbon',
-      position: 'Full-stack Developer (Internship)',
+      position: 'Full-Stack Developer (Internship)',
       period: 'Feb 2022 - Sep 2022',
       location: 'Bengaluru (Remote)',
       description: [

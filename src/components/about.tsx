@@ -21,7 +21,7 @@ const About = () => {
             <div className="absolute inset-[1px] bg-background rounded-lg" />
             <CardContent className="p-6 text-lg relative z-10">
               <p className="mb-4">
-                I&apos;m a Senior Software Developer with extensive experience in modern web technologies. My journey in software development has equipped me with a diverse skill set spanning both frontend and backend technologies.
+                I&apos;m a Senior Full Stack Software Developer with extensive experience in modern web technologies. My journey in software development has equipped me with a diverse skill set spanning both frontend and backend technologies.
               </p>
               <p className="mb-4">
                 Currently working at bizWorkz Consulting, I specialize in building robust and scalable web applications using Next.js, React, and TypeScript. My experience includes developing complex applications from scratch, implementing RESTful APIs, and integrating third-party services.

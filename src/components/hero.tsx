@@ -20,7 +20,7 @@ const Hero = () => {
                 Hi, I&apos;m Akash More
               </h1>
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                Senior Software Developer specializing in modern web technologies
+                Full Stack Software Developer specializing in modern web technologies
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -45,7 +45,7 @@ const Hero = () => {
                 <HoverCardContent className="w-80">
                   <div className="flex justify-between space-x-4">
                     <div className="space-y-1">
-                      <h4 className="text-sm font-semibold">Senior Software Developer</h4>
+                      <h4 className="text-sm font-semibold">Full Stack Software Developer</h4>
                       <p className="text-sm">Working on modern web applications using Next.js, React, and TypeScript.</p>
                       <div className="flex items-center pt-2">
                         <span className="text-xs text-muted-foreground">Oct 2023 - Present</span>
@@ -77,12 +77,12 @@ const Hero = () => {
               </div>
               <div className="flex gap-2">
                 <Button asChild size="sm" variant="ghost" className="h-8 px-3 text-xs hover:bg-muted">
-                  <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <Link href="/akash-more-updated-resume.pdf" target="_blank" rel="noopener noreferrer">
                     View
                   </Link>
                 </Button>
                 <Button asChild size="sm" className="h-8 px-3 text-xs bg-gradient-to-r from-primary to-accent text-white font-medium shadow-sm hover:from-accent hover:to-primary">
-                  <Link href="/resume.pdf" download>
+                  <Link href="/akash-more-updated-resume.pdf" download>
                     Download
                   </Link>
                 </Button>

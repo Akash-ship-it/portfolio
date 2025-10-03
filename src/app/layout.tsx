@@ -33,8 +33,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Akash More | Senior Software Developer",
-  description: "Portfolio website of Akash More, a Senior Software Developer specializing in Next.js, React, TypeScript, and modern web technologies.",
+  title: "Akash More | Full Stack Software Developer",
+  description: "Portfolio website of Akash More, a Full Stack Software Developer specializing in Next.js, React, TypeScript, and modern web technologies.",
   keywords: ["Akash More", "Software Developer", "Web Developer", "React", "Next.js", "TypeScript", "MERN Stack", "Frontend Developer", "Backend Developer", "Full Stack Developer"],
 };
 
