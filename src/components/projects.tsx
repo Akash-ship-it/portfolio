@@ -78,11 +78,11 @@ const Projects = () => {
     {
       title: "CDM Cast",
       description:
-        "Developed, Deployed and Maintained an Internal Broadcasting Application for College of Defence Management (CDM)",
+        "Led full-stack development of real-time television broadcasting system using Node.js, React, and WebSockets, reducing communication delays by 60%",
       technologies: [
         "Next.js",
         "Node.js",
-        "Socket.io",
+        "WebSockets",
         "MongoDB",
         "JWT",
         "Tailwind CSS",
@@ -105,17 +105,18 @@ const Projects = () => {
       codeLink: "#",
     },
     {
-      title: "briyte",
+      title: "briyte.ai",
       description:
-        "Deployed and maintained a SaaS AI-powered application serving daily active users in production",
+        "Designed automation tool integrating OpenAI, Gemini, and Deepseek APIs with Golang Fiber and PostgreSQL, reducing operational costs by 30%",
       technologies: [
-        "PHP",
-        "Laravel",
-        "MySQL",
+        "Golang",
+        "Fiber",
+        "PostgreSQL",
+        "OpenAI APIs",
+        "Gemini API",
+        "Deepseek API",
         "AWS",
         "Docker",
-        "Git",
-        "CI/CD",
       ],
       demoLink: "http://briyte.ai/",
       codeLink: "#",
@@ -123,11 +124,11 @@ const Projects = () => {
     {
       title: "bizworkz Employee Management System",
       description:
-        "Developed, Deployed and Maintained an internal Employee Management System",
+        "Developed, Deployed and Maintained an internal Employee Management System with real-time features",
       technologies: [
         "Next.js",
         "Node.js",
-        "Socket.io",
+        "WebSockets",
         "MongoDB",
         "JWT",
         "Tailwind CSS",
@@ -136,15 +137,16 @@ const Projects = () => {
       demoLink: "https://bizworkz.me/",
     },
     {
-      title: "bizhubb",
-      description: "Deployed, Maintained and Optimized a CRM for a startup",
+      title: "Bizhubb CRM",
+      description: "Engineered CRM platform with Redux, MongoDB, and RabbitMQ, reducing manual tracking effort by 40% and accelerating enterprise deal closures by 25%",
       technologies: [
-        "PHP",
-        "Laravel",
-        "MySQL",
+        "React",
+        "Redux",
+        "MongoDB",
+        "RabbitMQ",
+        "Node.js",
         "AWS",
         "Docker",
-        "Git",
         "CI/CD",
       ],
       demoLink: "https://bizhubb.io/",

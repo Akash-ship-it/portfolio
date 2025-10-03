@@ -21,19 +21,19 @@ const About = () => {
             <div className="absolute inset-[1px] bg-background rounded-lg" />
             <CardContent className="p-6 text-lg relative z-10">
               <p className="mb-4">
-                I&apos;m a Senior Full Stack Software Developer with extensive experience in modern web technologies. My journey in software development has equipped me with a diverse skill set spanning both frontend and backend technologies.
+                I&apos;m a Consultant Software Developer with extensive experience in full-stack development and real-time systems. My journey in software development has equipped me with a diverse skill set spanning both frontend and backend technologies, with a focus on delivering measurable business impact.
               </p>
               <p className="mb-4">
-                Currently working at bizWorkz Consulting, I specialize in building robust and scalable web applications using Next.js, React, and TypeScript. My experience includes developing complex applications from scratch, implementing RESTful APIs, and integrating third-party services.
+                Currently working at bizWorkz Consulting, I lead the development of enterprise-grade applications including real-time broadcasting systems, CRM platforms, and AI-powered automation tools. I specialize in building scalable solutions using modern technologies like React, Node.js, Golang, and cloud services on AWS.
               </p>
               <p className="mb-4">
-                I have a strong foundation in the MERN stack (MongoDB, Express.js, React, Node.js) and have expanded my expertise to include technologies like Golang, microservices architecture with gRPC, and cloud services on AWS.
+                My expertise spans the full technology stack - from frontend frameworks like React and Vue.js to backend technologies including Node.js, Express.js, Golang Fiber, and microservices architecture with gRPC. I have hands-on experience with databases (MongoDB, PostgreSQL), cloud platforms (AWS), and DevOps tools (Docker, Kubernetes, CI/CD).
               </p>
               <p className="mb-4">
-                I&apos;m passionate about creating clean, efficient, and maintainable code. I enjoy solving complex problems and continuously learning new technologies to stay at the forefront of web development.
+                I&apos;m passionate about creating efficient, maintainable code and solving complex problems. I continuously learn new technologies and contribute to the developer community through my 52 Projects Challenge and technical content creation on YouTube.
               </p>
               <p>
-                When I&apos;m not coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing my knowledge with the developer community.
+                When I&apos;m not coding, I enjoy building real-world applications, sharing knowledge through technical content, and contributing to open-source projects that help the developer community grow.
               </p>
             </CardContent>
           </Card>

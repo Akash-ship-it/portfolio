@@ -20,7 +20,7 @@ const Hero = () => {
                 Hi, I&apos;m Akash More
               </h1>
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                Full Stack Software Developer specializing in modern web technologies
+                Consultant Software Developer specializing in full-stack development and real-time systems
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -45,8 +45,8 @@ const Hero = () => {
                 <HoverCardContent className="w-80">
                   <div className="flex justify-between space-x-4">
                     <div className="space-y-1">
-                      <h4 className="text-sm font-semibold">Full Stack Software Developer</h4>
-                      <p className="text-sm">Working on modern web applications using Next.js, React, and TypeScript.</p>
+                      <h4 className="text-sm font-semibold">Consultant Software Developer</h4>
+                      <p className="text-sm">Leading full-stack development of real-time systems and enterprise applications.</p>
                       <div className="flex items-center pt-2">
                         <span className="text-xs text-muted-foreground">Oct 2023 - Present</span>
                       </div>

@@ -4,6 +4,8 @@ import About from '@/components/about';
 import Experience from '@/components/experience';
 import Skills from '@/components/skills';
 import Projects from '@/components/projects';
+import Education from '@/components/education';
+import Certifications from '@/components/certifications';
 import { Testimonials } from '@/components/testimonials';
 import Contact from '@/components/contact';
 import Footer from '@/components/footer';
@@ -28,6 +30,12 @@ export default function Home() {
         </SectionReveal>
         <SectionReveal>
           <Projects />
+        </SectionReveal>
+        <SectionReveal>
+          <Education />
+        </SectionReveal>
+        <SectionReveal>
+          <Certifications />
         </SectionReveal>
         <SectionReveal>
           <Testimonials />
